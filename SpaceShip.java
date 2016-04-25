@@ -12,13 +12,15 @@ public class SpaceShip extends Sprite{
 	}
 
 	@Override
-	public void draw(Graphics2D g) {
+	public void draw(Graphics2D g)
+	{
 		g.setColor(Color.BLUE);
 		g.fillRect(x, y, width, height);
 		
 	}
 
-	public void move(int direction){
+	public void move(int direction)
+	{
 		x += (step * direction);
 		if(x < 0)
 			x = 0;
